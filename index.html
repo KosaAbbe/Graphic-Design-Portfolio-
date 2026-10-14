@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kosa Abbe | Graphic Designer, Abuja</title>
+<meta name="description" content="Kosa Abbe is a graphic designer in Abuja with 7 years in branding, posters, social media, motion graphics and print design.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141414;--ink2:#1f1f1e;--paper:#d6d2c9;--paper2:#e7e4dc;--lime:#c3d11c;--muted:#9d9a92;--wide:'Archivo',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--ink);color:var(--paper);font:400 1.0625rem/1.6 var(--wide);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+h1,h2{font-stretch:125%;font-weight:900;line-height:.98;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(2.6rem,6.2vw,5.6rem)}
+h2{font-size:clamp(1.9rem,4vw,3.2rem);margin-bottom:1.5rem}
+.top{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.9rem clamp(1rem,4vw,3rem);background:rgba(20,20,20,.88);backdrop-filter:blur(8px);border-bottom:1px solid #2c2c2a}
+.logo{text-decoration:none;font-stretch:125%;font-weight:800}.star{color:var(--lime)}
+nav{display:flex;gap:1.4rem;align-items:center}nav a{text-decoration:none;font-size:.95rem}nav a:hover{color:var(--lime)}
+.pill{background:var(--lime);color:var(--ink);padding:.45rem 1rem;border-radius:99px;font-weight:700}.pill:hover{color:var(--ink)!important;filter:brightness(1.08)}
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(1.5rem,4vw,4rem);align-items:center;padding:clamp(2rem,6vw,5rem) clamp(1rem,4vw,3rem)}
+.lede{max-width:34rem;margin:1.5rem 0 2rem;color:var(--paper);font-size:1.15rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border:2px solid var(--paper);border-radius:4px;text-decoration:none;font-weight:700;transition:background .2s,color .2s,transform .2s}
+.btn:hover{background:var(--paper);color:var(--ink)}
+.btn.solid{background:var(--lime);border-color:var(--lime);color:var(--ink)}.btn.solid:hover{transform:translateY(-2px)}
+.id-stage{perspective:1100px}
+#idCard{width:100%;border-radius:22px;box-shadow:0 40px 70px -20px #000;transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .3s;animation:drop 1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes drop{from{opacity:0;transform:translateY(-60px) rotate(-6deg)}to{opacity:1;transform:none}}
+.hint{margin-top:1rem;text-align:center;font:400 .8rem 'Space Mono',monospace;color:var(--muted)}
+.band{background:var(--lime);color:var(--ink);overflow:hidden;white-space:nowrap;transform:rotate(-1.2deg);margin:1rem -1rem}
+.track{display:inline-flex;animation:slide 28s linear infinite}
+.track span{padding:.8rem 0;font-stretch:125%;font-weight:800;font-size:1.3rem;white-space:pre}
+@keyframes slide{to{transform:translateX(-50%)}}
+.sec{padding:clamp(3rem,8vw,6rem) clamp(1rem,4vw,3rem);max-width:1300px;margin:0 auto}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.filters button{font:700 .9rem var(--wide);background:none;color:var(--paper);border:2px solid #3a3a37;border-radius:99px;padding:.45rem 1rem;cursor:pointer}
+.filters button:hover{border-color:var(--paper)}
+.filters button[aria-pressed=true]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.more{margin-top:1.5rem;color:var(--muted)}.more a{color:var(--lime)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(1.5rem,4vw,4rem);align-items:start}
+.about img{border-radius:6px;border:3px solid var(--lime)}
+.about p{max-width:38rem;margin-bottom:1.2rem}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.5rem;margin:1.5rem 0}
+.checks div{border-top:2px solid var(--lime);padding-top:.5rem}
+.checks dt{font-stretch:125%;font-weight:800}.checks dd{color:var(--muted);font-size:.95rem}
+.facts{list-style:none;padding:0;display:flex;gap:2rem;flex-wrap:wrap}
+.facts strong{display:block;font-stretch:125%;font-weight:900;font-size:2.4rem;color:var(--lime);line-height:1}
+.contact{text-align:center}
+.mail{display:block;font-stretch:125%;font-weight:900;font-size:clamp(1.2rem,4.4vw,3.2rem);margin:1rem 0 2rem;text-decoration:none;overflow-wrap:anywhere}
+.mail:hover{color:var(--lime)}.contact .cta{justify-content:center}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:1.5rem clamp(1rem,4vw,3rem);border-top:1px solid #2c2c2a;color:var(--muted);font-size:.9rem}
+@media(max-width:820px){.hero,.about{grid-template-columns:1fr}nav a:not(.pill){display:none}.id-stage{order:-1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+
+.grid{columns:3 260px;column-gap:1rem}
+.tile{display:block;width:100%;margin:0 0 1rem;padding:0;border:0;background:var(--ink2);border-radius:6px;overflow:hidden;cursor:zoom-in;break-inside:avoid;text-align:left;color:inherit;font:inherit;transition:transform .25s}
+.tile:hover{transform:translateY(-4px)}
+.tile img{width:100%;height:auto}
+.cap{display:block;padding:.7rem .9rem .85rem}
+.cap b{display:block;font-stretch:125%;font-weight:800;font-size:1rem;line-height:1.2}
+.cap small{color:var(--muted);font-size:.85rem}
+dialog{border:0;padding:0;background:var(--ink);color:var(--paper);max-width:min(96vw,1200px);max-height:94vh;width:100%;border-radius:8px;overflow:hidden}
+dialog::backdrop{background:rgba(0,0,0,.85)}
+dialog[open]{display:flex;flex-direction:column}
+#lbImg{max-height:78vh;width:100%;object-fit:contain;background:#000}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 1rem}
+.lb-bar p{flex:1;text-align:center;font-size:.95rem}
+dialog button{font:700 .9rem var(--wide);background:var(--paper);color:var(--ink);border:0;border-radius:99px;padding:.5rem 1rem;cursor:pointer}
+#lbClose{position:absolute;top:.7rem;right:.7rem;z-index:2;background:var(--lime)}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#top" aria-label="Kosa Abbe, home"><span class="star">✳</span> Kosa Abbe</a>
+  <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a class="pill" href="IYEGBEKOSA_ABBE_JOSHUA_CV.docx" download>Download CV</a></nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <h1>Design is problem&nbsp;solving.</h1>
+    <p class="lede">I'm Kosa, a graphic designer in Abuja. Seven years of branding, posters, social media, motion graphics and print, all built from a clear brief.</p>
+    <div class="cta"><a class="btn solid" href="#work">See the work</a><a class="btn" href="#contact">Hire me</a></div>
+  </div>
+  <div class="id-stage" id="idStage">
+    <img id="idCard" src="creative-id.webp" alt="Kosa Abbe's Graphic Designer License: 7 years of experience in branding, posters, social media, motion graphics, print design and creative direction" width="1536" height="1024">
+    <p class="hint">Move your cursor over the licence</p>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="track"><span>Branding ✳ Posters ✳ Social media ✳ Motion graphics ✳ Print design ✳ Creative direction ✳ </span><span>Branding ✳ Posters ✳ Social media ✳ Motion graphics ✳ Print design ✳ Creative direction ✳ </span></div></div>
+
+<section id="work" class="sec">
+  <h2>Selected work</h2>
+  <div class="filters" id="filters" role="group" aria-label="Filter work by type"></div>
+  <div class="grid" id="grid"></div>
+  <p class="more">Full portfolio, every project: <a href="https://drive.google.com/drive/folders/1iqQkJ_MroR0r4GowN_V1s0BPG5v33_vJ" target="_blank" rel="noopener">open the Google Drive folder</a></p>
+</section>
+
+<section id="about" class="sec about">
+  <img src="kosa.webp" alt="Portrait of Kosa Abbe smiling in a navy shirt" width="900" height="900" loading="lazy">
+  <div>
+    <h2>I judge design against the brief.</h2>
+    <p>Every project starts with one question: what is this design supposed to do? Then I check it on four things, in this order.</p>
+    <dl class="checks">
+      <div><dt>Type</dt><dd>Can it be read quickly, and do the sizes and pairings show what matters?</dd></div>
+      <div><dt>Hierarchy</dt><dd>Does the eye land on the right thing first?</dd></div>
+      <div><dt>Colour</dt><dd>Does the palette hold together and stay legible for everyone?</dd></div>
+      <div><dt>Layout</dt><dd>Are grid, spacing and alignment doing their job?</dd></div>
+    </dl>
+    <p>I also write and refine AI image prompts, and review each result against the client's brief before it goes anywhere.</p>
+    <ul class="facts">
+      <li><strong>7</strong> years designing</li>
+      <li><strong>20+</strong> band identities</li>
+      <li><strong>6</strong> specialisms</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <h2>Have a brief? Send it over.</h2>
+  <a class="mail" href="mailto:iyegbekosaabbe@gmail.com">iyegbekosaabbe@gmail.com</a>
+  <div class="cta">
+    <a class="btn solid" href="tel:+2348147675209">Call +234 814 767 5209</a>
+    <a class="btn" href="IYEGBEKOSA_ABBE_JOSHUA_CV.docx" download>Download CV</a>
+    <a class="btn" href="https://drive.google.com/drive/folders/1iqQkJ_MroR0r4GowN_V1s0BPG5v33_vJ" target="_blank" rel="noopener">View portfolio</a>
+  </div>
+</section>
+</main>
+<footer><span>© <span id="yr">2026</span> Kosa Abbe</span><span>Abuja, Nigeria. Working remotely.</span></footer>
+<dialog id="lb" aria-label="Project viewer">
+  <button id="lbClose" aria-label="Close viewer">Close</button>
+  <img id="lbImg" alt="">
+  <div class="lb-bar"><button id="lbPrev">Previous</button><p id="lbCap"></p><button id="lbNext">Next</button></div>
+</dialog>
+<script>
+// ---- Your work. Add a piece: drop images in assets/work/ and add an entry here.
+const works = [
+ {
+  "title": "Cultivate",
+  "type": "Print design",
+  "note": "Magazine cover",
+  "alt": "Editorial magazine cover with a serif masthead and a portrait lit by warm window light",
+  "src": "cultivate-cover.webp",
+  "thumb": "cultivate-cover-t.webp",
+  "w": 800,
+  "h": 534
+ },
+ {
+  "title": "Earth & Bloom",
+  "type": "Creative direction",
+  "note": "Brief to visual",
+  "alt": "Creative brief, mood board and final visuals for a premium tea brand in earthy greens and browns",
+  "src": "earth-and-bloom.webp",
+  "thumb": "earth-and-bloom-t.webp",
+  "w": 800,
+  "h": 533
+ },
+ {
+  "title": "Éclat Noir",
+  "type": "Social media",
+  "note": "Content set",
+  "alt": "Three-format social media set for a luxury fragrance: feed, story and square posts",
+  "src": "eclat-noir.webp",
+  "thumb": "eclat-noir-t.webp",
+  "w": 800,
+  "h": 533
+ },
+ {
+  "title": "If the Devil Wears Prada",
+  "type": "Posters",
+  "note": "Fashion poster",
+  "alt": "Dark red fashion poster with a bold serif title and a group of models",
+  "src": "devil-wears-prada.webp",
+  "thumb": "devil-wears-prada-t.webp",
+  "w": 800,
+  "h": 1132
+ },
+ {
+  "title": "Mamba Mentality",
+  "type": "Posters",
+  "note": "Sports ad concept",
+  "alt": "Basketball sneaker ad concept with a player driving in purple and gold light",
+  "src": "kobe-mamba.webp",
+  "thumb": "kobe-mamba-t.webp",
+  "w": 690,
+  "h": 1200
+ },
+ {
+  "title": "Luméa Skin",
+  "type": "Branding",
+  "note": "Campaign series",
+  "alt": "Brand board and six-image campaign series for a quiet-luxury skincare brand",
+  "src": "lumea-campaign.webp",
+  "thumb": "lumea-campaign-t.webp",
+  "w": 800,
+  "h": 1200
+ },
+ {
+  "title": "Refining to Perfection",
+  "type": "AI visuals",
+  "note": "Prompt case study",
+  "alt": "Before and after case study showing four prompt iterations of a skincare product image",
+  "src": "lumea-refinement.webp",
+  "thumb": "lumea-refinement-t.webp",
+  "w": 800,
+  "h": 533
+ },
+ {
+  "title": "Nafisa Ramadan",
+  "type": "Social media",
+  "note": "Seasonal set",
+  "alt": "Ramadan campaign set in deep green and gold with lantern imagery",
+  "src": "nafisa-ramadan.webp",
+  "thumb": "nafisa-ramadan-t.webp",
+  "w": 800,
+  "h": 533
+ },
+ {
+  "title": "Northline",
+  "type": "Branding",
+  "note": "Consistent character",
+  "alt": "Four-panel campaign with one consistent character across focus, move, learn and live themes",
+  "src": "northline.webp",
+  "thumb": "northline-t.webp",
+  "w": 800,
+  "h": 640
+ },
+ {
+  "title": "Northvale Bank",
+  "type": "Print design",
+  "note": "Billboard concept",
+  "alt": "Outdoor billboard concept for a bank in dark green with a bold two-colour headline",
+  "src": "northvale-bank.webp",
+  "thumb": "northvale-bank-t.webp",
+  "w": 800,
+  "h": 400
+ },
+ {
+  "title": "Omix Autos",
+  "type": "Print design",
+  "note": "Flyer",
+  "alt": "Black and red car dealership flyer with a call-or-WhatsApp contact block",
+  "src": "omix-autos.webp",
+  "thumb": "omix-autos-t.webp",
+  "w": 800,
+  "h": 1200
+ },
+ {
+  "title": "Tobacco 01",
+  "type": "Posters",
+  "note": "Product ad",
+  "alt": "Fragrance product poster in warm bronze tones with icon callouts",
+  "src": "swiss-arabian.webp",
+  "thumb": "swiss-arabian-t.webp",
+  "w": 733,
+  "h": 1200
+ },
+ {
+  "title": "Sonora",
+  "type": "Posters",
+  "note": "Type-led product ad",
+  "alt": "Headphone ad with a large condensed serif headline over a portrait",
+  "src": "sonora.webp",
+  "thumb": "sonora-t.webp",
+  "w": 800,
+  "h": 1067
+ }
+];
+const DRIVE = 'https://drive.google.com/drive/folders/1iqQkJ_MroR0r4GowN_V1s0BPG5v33_vJ';
+const grid = document.getElementById('grid'), bar = document.getElementById('filters');
+const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+const types = ['All', ...new Set(works.map(w => w.type))];
+let shown = [], cur = 0;
+function render(f) {
+  shown = works.filter(w => f === 'All' || w.type === f);
+  grid.innerHTML = shown.map((w, i) =>
+    `<button class="tile" data-i="${i}" aria-label="Open ${w.title}, ${w.type}">
+      <img src="${w.thumb}" width="${w.w}" height="${w.h}" alt="${w.alt}" loading="lazy">
+      <span class="cap"><b>${w.title}</b><small>${w.type}, ${w.note}</small></span></button>`).join('');
+  bar.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.dataset.t === f));
+}
+function open(i) {
+  cur = (i + shown.length) % shown.length;
+  const w = shown[cur];
+  lbImg.src = w.src; lbImg.alt = w.alt;
+  lbCap.textContent = `${w.title}: ${w.type}, ${w.note}`;
+  if (!lb.open) lb.showModal();
+}
+bar.innerHTML = types.map(t => `<button data-t="${t}">${t}</button>`).join('');
+bar.addEventListener('click', e => e.target.dataset.t && render(e.target.dataset.t));
+grid.addEventListener('click', e => { const t = e.target.closest('.tile'); if (t) open(+t.dataset.i); });
+document.getElementById('lbClose').onclick = () => lb.close();
+document.getElementById('lbPrev').onclick = () => open(cur - 1);
+document.getElementById('lbNext').onclick = () => open(cur + 1);
+lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') open(cur - 1); if (e.key === 'ArrowRight') open(cur + 1); });
+render('All');
+
+// ---- Licence tilts toward the cursor
+const stage = document.getElementById('idStage'), card = document.getElementById('idCard');
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  stage.addEventListener('pointermove', e => {
+    const r = stage.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    card.style.transform = `rotateY(${x * 18}deg) rotateX(${-y * 14}deg) scale(1.03)`;
+  });
+  stage.addEventListener('pointerleave', () => card.style.transform = '');
+}
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+</script>
+</body>
+</html>
